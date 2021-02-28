@@ -1,0 +1,18 @@
+.dashboard-card{
+    width:200px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px
+}
+
+#section-1 #section-2{
+    margin-bottom: 50px
+}
+
+.nb-container{
+    display: flex;
+    justify-content: 'space-around';
+}

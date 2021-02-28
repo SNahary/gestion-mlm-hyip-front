@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+
+.form{
+    width: 300px;
+    padding: 30px;
+}
+
+.btn{
+    margin-top: 20px;
+    width: 240px;
+}

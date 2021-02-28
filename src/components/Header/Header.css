@@ -1,0 +1,109 @@
+a{
+    text-decoration: none;
+    color: #eee;
+}
+
+h1{
+    color: #eee;
+}
+
+header{
+    width: 100%;
+    height: 60vh;
+    background: linear-gradient(to bottom ,rgba(0,0,0,1), rgba(0,0,0,0.5)), url('../../assets/images/bg.jpg') center no-repeat;
+    background-size: cover;
+    font-size: 10px;
+}
+
+.my-container{
+    max-width: 120rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    padding-top: 1.5rem;
+}
+
+.brand{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.brand span{
+    color: crimson;
+    text-transform: uppercase;
+}
+
+nav ul{
+    font-size: 0.7rem;
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    text-transform: uppercase;
+}
+
+nav ul li a{
+    padding: 1rem 0;
+    margin: 0 1rem;
+    position: relative;
+    letter-spacing: 2px;
+}
+
+nav ul li a:last-child{
+    margin-right: 0;
+}
+
+nav ul li a:hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: crimson;
+    left: 0;
+    transform: scaleX(0);
+    transition: all .5s;
+}
+
+
+nav ul li a::after{
+    bottom: 0;
+    transform-origin: right;
+}
+
+nav ul li a:hover::after{
+    transform: scaleX(1);
+    color: crimson;
+} 
+
+nav ul li a.active{
+    border-bottom: 1px solid crimson;
+}
+
+#showcase{
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;  
+    align-items: center;
+}
+
+#showcase p {
+    color: white;
+    font-size: 1rem;
+}
+
+#showcase h1{
+    font-size: 2rem;
+}
+.my-btn,.my-btn:hover{
+    background-color: crimson;
+    border: none;
+    width: 10%;
+}

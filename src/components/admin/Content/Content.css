@@ -1,0 +1,14 @@
+.Content{
+    overflow: initial;
+    z-index: 1;
+}
+
+.userInfo{
+    margin: 16px 0; 
+}
+
+@media (max-width: 575px){
+    .userInfo{
+        margin: 16px 32px
+    }
+}
