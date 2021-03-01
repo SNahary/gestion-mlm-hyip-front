@@ -20,7 +20,7 @@ const Dashboard = props => {
         collapsedWidth="0"
       >
         <div className="logoContainer">
-          <h3 style={{ color: "#fff" }}>E-Moniteur</h3>
+          <h3 style={{ color: "#fff" }}><span style={{ color: 'red' }}>SARO</span>INVEST</h3>
         </div>
         <Menu theme="dark" defaultSelectedKeys={["1"]} mode="inline">
           <Menu.Item key="1" icon={<PieChartOutlined />}>

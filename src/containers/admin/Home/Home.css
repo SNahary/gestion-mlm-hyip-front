@@ -8,11 +8,15 @@
     margin: 20px
 }
 
-#section-1 #section-2{
-    margin-bottom: 50px
+#section-1, #section-2, #section-3{
+    margin: 25px 0;
 }
 
 .nb-container{
     display: flex;
     justify-content: 'space-around';
+}
+
+.title-dashboard{
+    margin-bottom: 25px;
 }
