@@ -12,7 +12,8 @@ import {
   Form,
   Input,
   Collapse,
-  message
+  message,
+  BackTop
 } from "antd";
 import * as actions from "../../src/store/actions/index";
 import {
@@ -67,36 +68,19 @@ const FrontSite = props => {
                   bordered={false}
                   style={{ width: "100%" }}
                 >
-                  <Row>
-                    <Col span={12}>
                       <p>{site.description}</p>
-                      {/* <h4>Rating: <StarTwoTone twoToneColor='yellow' /><StarTwoTone twoToneColor='yellow' /><StarTwoTone twoToneColor='yellow' /><StarTwoTone twoToneColor='yellow' /><StarTwoTone twoToneColor='yellow' /></h4> */}
                       <h4>
                         Rating:{" "}
-                        <StarFilled
-                          style={{ color: "yellow", fontSize: "16px" }}
-                        />
-                        <StarFilled
-                          style={{ color: "yellow", fontSize: "16px" }}
-                        />
-                        <StarFilled
-                          style={{ color: "yellow", fontSize: "16px" }}
-                        />
-                        <StarFilled
-                          style={{ color: "yellow", fontSize: "16px" }}
-                        />
-                        <StarFilled
-                          style={{ color: "yellow", fontSize: "16px" }}
-                        />
+                        <StarFilled className="star" />
+                        <StarFilled className="star" />
+                        <StarFilled className="star" />
+                        <StarFilled className="star" />
+                        <StarFilled className="star" />
                       </h4>
-                    </Col>
-                    <Col span={12}>
                       <h4>Minimal spend: {site.minimumInvest} $</h4>
                       <h4>Minimum withdrawal: {site.minimumWithdrawal} $</h4>
                       <h4>Investment plan: {site.contrat}</h4>
-                      <h4>Date of project's beginning: {site.createdAt}</h4>
-                    </Col>
-                  </Row>
+                      <h4>Beginning date: {site.createdAt}</h4>
                   <Button type="link" className="my-btn my-btn-card">
                     <a href="#" target="_blank">
                       Visit
@@ -112,9 +96,9 @@ const FrontSite = props => {
             <h1 className="title">Contact us</h1>
             <Collapse defaultActiveKey="0">
               <Panel header="Contact us for more informations" key="1">
-                <Row>
-                  <Col xs="0" sm={6}></Col>
-                  <Col xs="24" sm={12}>
+                <Row style={{ width: '100%' }}>
+                  <Col xs={2} sm={4} md={6}></Col>
+                  <Col xs={20} sm={16} md={12}>
                     <Form
                       id="form"
                       form={form}
@@ -173,7 +157,7 @@ const FrontSite = props => {
                       </Form.Item>
                     </Form>
                   </Col>
-                  <Col xs="0" sm={6}></Col>
+                  <Col xs={2} sm={4} md={6}></Col>
                 </Row>
               </Panel>
             </Collapse>
@@ -183,17 +167,14 @@ const FrontSite = props => {
       <footer id="footer">
         <h5>
           Follow us on :
-          <a href="#" target="_blank">
-            <FacebookOutlined style={{ fontSize: "16px" }} />{" "}
+          <a href="https://twitter.com" target="_blank">
+            <TwitterOutlined style={{ color: '#fff', fontSize: "16px" }} />
           </a>
-          <a href="#" target="_blank">
-            <TwitterOutlined style={{ fontSize: "16px" }} />{" "}
-          </a>{" "}
-          <a href="#" target="_blank">
-            <WhatsAppOutlined style={{ fontSize: "16px" }} />{" "}
+          <a href="https://www.instagram.com" target="_blank">
+            <InstagramOutlined style={{ color: '#fff', fontSize: "16px" }} />
           </a>
-          <a href="#" target="_blank">
-            <InstagramOutlined style={{ fontSize: "16px" }} />{" "}
+          <a href="https://www.facebook.com/groups/371715450569732" target="_blank">
+            <FacebookOutlined style={{ color: '#fff', fontSize: "16px" }} />
           </a>
         </h5>
         <p style={{ marginTop: "10px" }}>
@@ -201,6 +182,7 @@ const FrontSite = props => {
           INVEST
         </p>
       </footer>
+      <BackTop />
     </div>
   );
 };

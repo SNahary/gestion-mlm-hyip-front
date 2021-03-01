@@ -1,4 +1,4 @@
-a{
+#navbar a{
     text-decoration: none;
     color: #eee;
 }
@@ -107,3 +107,34 @@ nav ul li a.active{
     border: none;
     width: 10%;
 }
+
+.mobileOnly{
+    display: none;
+}
+
+.menu-mobileOnly li{
+    list-style: none;
+}
+.menu-mobileOnly a{
+    text-transform: uppercase;
+    color: crimson !important;
+}
+
+.menu-mobileOnly a:hover{
+    color: crimson !important;
+    opacity: 0.7;
+}
+
+@media(max-width: 480px){
+    nav ul{
+        display: none;
+    }
+    .mobileOnly{
+        display: inline-block;
+        margin-top: -20px;
+    }
+    .menu-mobileOnly li {
+        
+    }
+}
+
